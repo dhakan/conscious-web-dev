@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form blur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" type="module"></script>
+    <!-- <script src="blur-and-input.js" type="module"></script> -->
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      font-size: 24px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Raleway", serif;
+    }
+
+    button {
+      padding: 0.5rem;
+      border: 0;
+      border-radius: 0.5rem;
+      background-color: transparent;
+      border: 1px solid black;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    button:active {
+      opacity: 0.7;
+    }
+
+    form {
+      border: 1px solid lightgray;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    input {
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      border: 1px solid lightgray;
+      border-radius: 0.5rem;
+    }
+
+    input:focus-visible {
+      outline: 0px;
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    .form-group.error input {
+      border-color: rgb(199, 0, 0);
+    }
+
+    .form-group.error .error-message {
+      display: block;
+    }
+
+    .error-message {
+      display: none;
+      color: rgb(199, 0, 0);
+    }
+  </style>
+  <body>
+    <form action="">
+      <div class="form-group">
+        <input type="email" placeholder="Email" />
+        <div class="error-message">Invalid email</div>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password" />
+        <div class="error-message">Invalid password</div>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>

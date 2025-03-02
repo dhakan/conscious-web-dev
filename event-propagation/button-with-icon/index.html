@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button with icon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.ts" type="module"></script>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 48px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      background-color: transparent;
+    }
+
+    body {
+      font-family: "Raleway", serif;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.125rem;
+      margin-left: 1rem;
+      padding: 0.75rem;
+      border: 2px solid lightgray;
+      border-radius: 0.5rem;
+      background-color: white;
+      transition: background-color 0.2s;
+    }
+
+    button svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    button:hover {
+      background-color: rgb(229, 227, 227);
+    }
+
+    button:active {
+      background-color: rgb(204, 202, 202);
+    }
+  </style>
+  <body>
+    <button>
+      <!-- <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </svg> -->
+
+      Button
+    </button>
+  </body>
+</html>
