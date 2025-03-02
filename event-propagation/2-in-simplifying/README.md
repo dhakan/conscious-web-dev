@@ -1,4 +1,4 @@
-# 1-child-elements-as-the-element-itself
+# 2-in-simplifying
 
 Make sure you have Node installed locally.
 

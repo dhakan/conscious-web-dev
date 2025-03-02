@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Performant list</title>
+    <title>Example</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
     <script src="index.js" type="module"></script>
   </head>
   <style>
@@ -48,7 +47,7 @@
       gap: 0.5rem;
     }
 
-    li button {
+    li {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -60,21 +59,25 @@
       transition: background-color 0.2s;
     }
 
-    li button:hover {
+    li:hover {
       background-color: rgb(229, 227, 227);
     }
 
-    li button:active {
+    li:active {
       background-color: rgb(204, 202, 202);
+    }
+
+    .done {
+      text-decoration: line-through;
     }
   </style>
   <body>
     <ul>
-      <li><button>Buy groceries</button></li>
-      <li><button>Walk the dog</button></li>
-      <li><button>Call mom</button></li>
-      <li><button>Clean office</button></li>
-      <li><button>Draft contract</button></li>
+      <li>Buy groceries</li>
+      <li>Walk the dog</li>
+      <li>Call mom</li>
+      <li>Clean office</li>
+      <li>Draft contract</li>
     </ul>
   </body>
 </html>
